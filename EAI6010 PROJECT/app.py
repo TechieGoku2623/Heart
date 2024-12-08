@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 # Load the trained model and scaler
 model = joblib.load('heart_disease_model.pkl')
-scaler = joblib.load('scaler.pkl')  # Assuming you saved the scaler used for training
 
 # Define the prediction route
 @app.route('/predict', methods=['POST'])
