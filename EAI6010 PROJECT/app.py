@@ -6,7 +6,7 @@ import joblib
 # Load your model (make sure it's available)
 model = joblib.load('heart_disease_model.pkl')  # Replace with your model file path
 
-app = Flask(__name__, template_file='templates')
+app = Flask(__name__, template_folder='templates')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
